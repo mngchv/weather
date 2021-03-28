@@ -1,7 +1,7 @@
 import java.io.Serializable;
 import java.util.Date;
 
-//Класс наблюдения о погоде
+
 public class WeatherDto implements Serializable{
     private Date date;
     private Double temperature;

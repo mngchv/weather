@@ -2,7 +2,7 @@ import java.io.File;
 import java.text.SimpleDateFormat;
 import java.util.*;
 
-//Класс, отвечающий за работу с файлом наблюдений
+
 public class WeatherFileManager {
     private File srcFile;
 
@@ -10,7 +10,7 @@ public class WeatherFileManager {
         this.srcFile = srcFile;
     }
 
-    //Считать все наблюдения из файла
+
     public List<WeatherDto> readWeatherFromFile() throws Exception {
         List<WeatherDto> weatherDtos = new ArrayList<>();
 
@@ -72,7 +72,6 @@ public class WeatherFileManager {
         while (scanner.hasNext()) {
             String line = scanner.nextLine();
             String[] parts = line.split(",");
-            //Первая часть должна быть равна "unit", если считываем единицы измерения
             if (parts[0].equals("unit")) {
                 units = parts;
                 break;

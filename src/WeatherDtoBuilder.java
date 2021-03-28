@@ -1,7 +1,5 @@
 import java.util.Date;
 
-
-//Билдер для наблюдения о погоде, просто ради удобства, можно и не делать
 public class WeatherDtoBuilder {
     private static WeatherDto weatherDto;
 
